@@ -8,7 +8,7 @@ import Section4 from "./Componants/Section4";
 
 export default function App() {
   return (
-    <div className="bg-[url('./Assets/bg.svg')] w-screen h-fit relative">
+    <div className="bg-[url('./Assets/bg.svg')] w-screen h-fit relative bg-cover">
       <Navbar />
       <Hero />
       <Section1 />
