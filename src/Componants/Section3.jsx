@@ -4,23 +4,47 @@ import quarter from "../Assets/quarter.svg";
 function Section3() {
   const [rotation, setrotation] = useState("0");
   return (
-    <div className=" mt-32 flex flex-col w-full h-fit gap-4 md:p-4">
+    <div className=" mt-32 flex flex-col w-full h-fit gap-8 md:p-4">
       <span className="mx-auto w-fit text-6xl font-bold bg-gradient-to-r from-[#BFD7EA] to-[#F7996E] bg-clip-text text-transparent">
-        The Circle{" "}
+        The Circle
       </span>
       <div
-        className={`relative rotate-[${rotation}deg] mx-auto transition-all transform-gpu ease-in-out w-screen md:h-[520px] md:w-[520px] `}
+        className={`relative rotate-[${rotation}deg] mx-auto transition-all transform-gpu ease-in-out w-[300px] h-[300px] md:h-[520px] md:w-[520px] `}
       >
-        <span className="text-lg text-white m-auto absolute top-0 left-1/2 -translate-x-1/2">
+        <span
+          onClick={() => {
+            setrotation(`0`);
+            console.log(rotation);
+          }}
+          className="cursor-pointer text-md md:text-lg font-bold z-50    text-white m-auto absolute top-[22px] md:top-[46px] left-1/2 -translate-x-1/2"
+        >
           text1
         </span>
-        <span className="text-lg text-white m-auto -rotate-90 absolute left-0 top-1/2 -translate-y-1/2">
+        <span
+          onClick={() => {
+            setrotation(`90`);
+            console.log(rotation);
+          }}
+          className="cursor-pointer text-md md:text-lg font-bold z-50    text-white m-auto -rotate-90 absolute left-[16px] md:left-[38px] top-1/2 -translate-y-1/2"
+        >
           text2
         </span>
-        <span className="text-lg text-white m-auto rotate-180 absolute bottom-0 left-1/2 -translate-x-1/2 ">
+        <span
+          onClick={() => {
+            setrotation(`180`);
+            console.log(rotation);
+          }}
+          className="cursor-pointer text-md md:text-lg font-bold z-50    text-white m-auto rotate-180 absolute bottom-[22px] md:bottom-[46px] left-1/2 -translate-x-1/2 "
+        >
           text3
         </span>
-        <span className="text-lg text-white m-auto rotate-90 absolute right-0 top-1/2 -translate-y-1/2">
+        <span
+          onClick={() => {
+            setrotation(`270`);
+            console.log(rotation);
+          }}
+          className="cursor-pointer text-md md:text-lg font-bold z-50    text-white m-auto rotate-90 absolute right-[16px] md:right-[38px] top-1/2 -translate-y-1/2"
+        >
           text4
         </span>
 
@@ -43,7 +67,7 @@ function Section3() {
                 setrotation(`90`);
                 console.log(rotation);
               }}
-              className="fill-blue-600"
+              className="hover:fill-[#e12cfe]"
               fill-rule="evenodd"
               clip-rule="evenodd"
               d="M196.399 217.612C191.712 212.925 184.084 212.914 179.614 217.807C87.5177 318.619 87.8537 474.145 179.845 577.213C184.298 582.203 192.009 582.243 196.738 577.513L236.921 537.331C241.546 532.706 241.577 525.247 237.334 520.27C176.924 449.383 176.859 345.044 237.637 275.819C242.009 270.84 242.048 263.261 237.363 258.576L196.399 217.612Z"
@@ -70,7 +94,7 @@ function Section3() {
                 setrotation(`180`);
                 console.log(rotation);
               }}
-              className="fill-gray-700 "
+              className="hover:fill-[#7332EF] "
               fill-rule="evenodd"
               clip-rule="evenodd"
               d="M577.178 598.391C581.864 603.078 581.876 610.705 576.982 615.176C476.17 707.272 320.645 706.936 217.576 614.945C212.586 610.491 212.547 602.781 217.276 598.051L257.459 557.869C262.083 553.244 269.542 553.213 274.52 557.455C345.406 617.866 449.745 617.931 518.97 557.153C523.949 552.781 531.528 552.742 536.214 557.427L577.178 598.391Z"
@@ -97,7 +121,7 @@ function Section3() {
                 setrotation(`0`);
                 console.log(rotation);
               }}
-              className="fill-green-600"
+              className="hover:fill-[#7332EF]"
               fill-rule="evenodd"
               clip-rule="evenodd"
               d="M217.607 196.394C212.921 191.707 212.909 184.08 217.803 179.609C318.615 87.513 474.141 87.8491 577.209 179.84C582.199 184.294 582.238 192.004 577.509 196.734L537.326 236.916C532.702 241.541 525.243 241.572 520.265 237.33C449.379 176.919 345.04 176.854 275.815 237.633C270.836 242.004 263.257 242.043 258.572 237.358L217.607 196.394Z"
@@ -124,7 +148,7 @@ function Section3() {
                 setrotation(`270`);
                 console.log(rotation);
               }}
-              className="fill-yellow-400"
+              className="hover:fill-[#1f37e4]"
               fill-rule="evenodd"
               clip-rule="evenodd"
               d="M598.395 577.182C603.082 581.869 610.71 581.88 615.18 576.986C707.276 476.174 706.94 320.649 614.949 217.581C610.495 212.591 602.785 212.551 598.056 217.281L557.873 257.463C553.248 262.088 553.217 269.547 557.459 274.524C617.87 345.41 617.935 449.75 557.157 518.975C552.785 523.954 552.746 531.533 557.431 536.218L598.395 577.182Z"
@@ -329,6 +353,40 @@ function Section3() {
             </linearGradient>
           </defs>
         </svg>
+        <div className="absolute p-4 flex items-center top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[56%] h-[56%] infuse-gradient rounded-full">
+          <p
+            className={`${
+              rotation !== "0" && "hidden"
+            } text-xs md:text-base font-bold text-white text-center`}
+          >
+            1.Podcasts AMAS Twitter Spaces Leveraging existing communities DAO
+            uccess Yield aggregators
+          </p>
+          <p
+            className={`${
+              rotation !== "90" && "hidden"
+            } -rotate-90 md:text-base text-xs font-bold text-white text-center`}
+          >
+            2.Podcasts AMAS Twitter Spaces Leveraging existing communities DAO
+            uccess Yield aggregators
+          </p>
+          <p
+            className={`${
+              rotation !== "180" && "hidden"
+            } rotate-180 md:text-base text-xs font-bold text-white text-center`}
+          >
+            3.Podcasts AMAS Twitter Spaces Leveraging existing communities DAO
+            uccess Yield aggregators
+          </p>
+          <p
+            className={`${
+              rotation !== "270" && "hidden"
+            } rotate-90 md:text-base text-xs font-bold text-white text-center`}
+          >
+            4.Podcasts AMAS Twitter Spaces Leveraging existing communities DAO
+            uccess Yield aggregators
+          </p>
+        </div>
       </div>
     </div>
   );
