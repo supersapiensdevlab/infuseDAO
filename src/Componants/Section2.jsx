@@ -7,15 +7,17 @@ function Section2() {
         The SBT
       </span>
       <div className="flex flex-wrap justify-center gap-2">
-        <div className="hover:scale-105 hover:border-white  transition-all ease-in-out p-4 flex flex-col gap-2 rectangle w-fit rounded-2xl  border-2 border-white/40">
-          <p className=" text-xl font-bold text-white ">
-            Revoke-able and Ragequit{" "}
-          </p>
-          <p className="w-48 flex-grow text-sm font-medium text-white ">
-            If the majority chooses your token and be burn due to inactivity.
-          </p>
+        <div className="w-full hover:scale-105 hover:border-white  transition-all ease-in-out p-4 flex sm:flex-col gap-2 rectangle w-fit rounded-2xl  border-2 border-white/40">
+          <div>
+            <p className=" text-xl font-bold text-white ">
+              Revoke-able and Ragequit{" "}
+            </p>
+            <p className="w-48 flex-grow text-sm font-medium text-white ">
+              If the majority chooses your token and be burn due to inactivity.
+            </p>
+          </div>
           <svg
-            className="  mx-auto"
+            className="  m-auto"
             width="102"
             height="102"
             viewBox="0 0 102 102"
@@ -36,7 +38,7 @@ function Section2() {
             />
           </svg>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex  flex-col gap-2">
           <div className="hover:scale-105 hover:border-white  transition-all ease-in-out p-4 flex  gap-2 rectangle w-fit rounded-2xl  border-2 border-white/40">
             <div className="flex flex-col flex-grow gap-2">
               <p className=" text-xl font-bold text-white ">Rights </p>
@@ -93,13 +95,15 @@ function Section2() {
             </svg>
           </div>
         </div>
-        <div className="hover:scale-105 hover:border-white  transition-all ease-in-out p-4 flex flex-col gap-2 rectangle w-fit rounded-2xl  border-2 border-white/40">
-          <p className=" text-xl font-bold text-white ">Governance </p>
-          <p className="w-48 flex-grow text-sm font-medium text-white ">
-            SBT holder will be able to vote on all major decisions.{" "}
-          </p>
+        <div className="hover:scale-105 hover:border-white  transition-all ease-in-out p-4 flex sm:flex-col gap-2 rectangle w-fit rounded-2xl  border-2 border-white/40">
+          <div>
+            <p className=" text-xl font-bold text-white ">Governance </p>
+            <p className="w-48 flex-grow text-sm font-medium text-white ">
+              SBT holder will be able to vote on all major decisions.{" "}
+            </p>
+          </div>
           <svg
-            className="  mx-auto"
+            className="  m-auto"
             width="102"
             height="102"
             viewBox="0 0 102 102"
