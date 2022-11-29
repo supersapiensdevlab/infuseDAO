@@ -8,6 +8,10 @@ function Section3() {
       <span className="mx-auto w-fit text-6xl font-bold bg-gradient-to-r from-[#BFD7EA] to-[#F7996E] bg-clip-text text-transparent">
         The Circle
       </span>
+      <div className="hidden rotate-[0deg]"></div>
+      <div className="hidden rotate-[90deg]"></div>
+      <div className="hidden rotate-[180deg]"></div>
+      <div className="hidden rotate-[270deg]"></div>
       <div
         className={`relative rotate-[${rotation}deg] mx-auto transition-all transform-gpu ease-in-out w-[300px] h-[300px] md:h-[520px] md:w-[520px] `}
       >
