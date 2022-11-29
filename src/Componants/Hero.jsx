@@ -2,7 +2,7 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className=" h-screen w-fit mx-auto flex flex-col gap-4 items-start justify-center">
+    <div className=" h-screen w-fit px-8 mx-auto flex flex-col gap-4 items-start justify-center">
       <span className="text-5xl md:text-8xl font-bold text-white ">
         InfuseDAO
       </span>

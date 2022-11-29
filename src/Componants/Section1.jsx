@@ -3,7 +3,7 @@ import spaceship from "../Assets/spaceship.png";
 function Section1() {
   return (
     <div className="flex flex-col w-full h-fit gap-8 p-4">
-      <span className="mx-auto w-fit text-6xl font-bold bg-gradient-to-r from-[#BFD7EA] to-[#F7996E] bg-clip-text text-transparent">
+      <span className="mx-auto w-fit text-6xl text-center font-bold bg-gradient-to-r from-[#BFD7EA] to-[#F7996E] bg-clip-text text-transparent">
         How would this work?
       </span>
       <div className="flex flex-wrap justify-center gap-8">

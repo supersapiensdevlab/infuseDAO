@@ -3,8 +3,8 @@ import React from "react";
 function Section2() {
   return (
     <div className="mt-32 flex flex-col w-full h-fit gap-8 p-4">
-      <span className="mx-auto w-fit text-6xl font-bold bg-gradient-to-r from-[#BFD7EA] to-[#F7996E] bg-clip-text text-transparent">
-        The SBT{" "}
+      <span className="mx-auto w-fit text-6xl text-center font-bold bg-gradient-to-r from-[#BFD7EA] to-[#F7996E] bg-clip-text text-transparent">
+        The SBT
       </span>
       <div className="flex flex-wrap justify-center gap-2">
         <div className="hover:scale-105 hover:border-white  transition-all ease-in-out p-4 flex flex-col gap-2 rectangle w-fit rounded-2xl  border-2 border-white/40">

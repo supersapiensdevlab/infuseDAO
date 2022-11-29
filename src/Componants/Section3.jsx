@@ -5,7 +5,7 @@ function Section3() {
   const [rotation, setrotation] = useState("0");
   return (
     <div className=" mt-32 flex flex-col w-full h-fit gap-8 md:p-4">
-      <span className="mx-auto w-fit text-6xl font-bold bg-gradient-to-r from-[#BFD7EA] to-[#F7996E] bg-clip-text text-transparent">
+      <span className="mx-auto w-fit text-6xl text-center font-bold bg-gradient-to-r from-[#BFD7EA] to-[#F7996E] bg-clip-text text-transparent">
         The Circle
       </span>
       <div className="hidden rotate-[0deg]"></div>
@@ -20,36 +20,36 @@ function Section3() {
             setrotation(`0`);
             console.log(rotation);
           }}
-          className="cursor-pointer text-md md:text-lg font-bold z-50    text-white m-auto absolute top-[22px] md:top-[46px] left-1/2 -translate-x-1/2"
+          className="cursor-pointer text-sm md:text-lg font-bold z-50    text-white m-auto absolute top-[22px] md:top-[46px] left-1/2 -translate-x-1/2"
         >
-          text1
+          Tech
         </span>
         <span
           onClick={() => {
             setrotation(`90`);
             console.log(rotation);
           }}
-          className="cursor-pointer text-md md:text-lg font-bold z-50    text-white m-auto -rotate-90 absolute left-[16px] md:left-[38px] top-1/2 -translate-y-1/2"
+          className="cursor-pointer text-sm md:text-lg font-bold z-50    text-white m-auto -rotate-90 absolute left-[0px] md:left-[14px] top-1/2 -translate-y-1/2"
         >
-          text2
+          Incubation
         </span>
         <span
           onClick={() => {
             setrotation(`180`);
             console.log(rotation);
           }}
-          className="cursor-pointer text-md md:text-lg font-bold z-50    text-white m-auto rotate-180 absolute bottom-[22px] md:bottom-[46px] left-1/2 -translate-x-1/2 "
+          className="cursor-pointer text-sm md:text-lg font-bold z-50    text-white m-auto rotate-180 absolute bottom-[22px] md:bottom-[46px] left-1/2 -translate-x-1/2 "
         >
-          text3
+          Marketing{" "}
         </span>
         <span
           onClick={() => {
             setrotation(`270`);
             console.log(rotation);
           }}
-          className="cursor-pointer text-md md:text-lg font-bold z-50    text-white m-auto rotate-90 absolute right-[16px] md:right-[38px] top-1/2 -translate-y-1/2"
+          className="cursor-pointer text-sm md:text-lg font-bold z-50    text-white m-auto rotate-90 absolute right-[-8px] md:right-[8px] top-1/2 -translate-y-1/2"
         >
-          text4
+          Partnerships
         </span>
 
         <svg
@@ -361,34 +361,72 @@ function Section3() {
           <p
             className={`${
               rotation !== "0" && "hidden"
-            } text-xs md:text-base font-bold text-white text-center`}
+            } w-full text-xs  md:text-base font-bold text-white text-center`}
           >
-            1.Podcasts AMAS Twitter Spaces Leveraging existing communities DAO
-            uccess Yield aggregators
+            <ul
+              role="list"
+              class="  flex items-center justify-center flex-wrap gap-2 w-full md:p-8"
+            >
+              <li>IDO</li>
+              <li>INO</li>
+              <li>Farming</li>
+              <li>Tech</li>
+              <li>Staking</li>
+              <li>Liquidity</li>
+              <li>Locker</li>
+              <li>Vesting</li>
+              <li>NFT</li>
+              <li>Farming</li>
+              <li>Vaults</li>
+            </ul>
+            {/* IDO INO Farming Tech Staking Liquidity Locker Vesting NFT Farming
+            Vaults */}
           </p>
           <p
             className={`${
               rotation !== "90" && "hidden"
             } -rotate-90 md:text-base text-xs font-bold text-white text-center`}
           >
-            2.Podcasts AMAS Twitter Spaces Leveraging existing communities DAO
-            uccess Yield aggregators
+            <ul
+              role="list"
+              class=" flex items-center justify-center flex-wrap gap-2 w-full md:p-8"
+            >
+              <li>Funding</li>
+              <li>advisory</li>
+              <li>Audits</li>
+              <li>Legal</li>
+            </ul>
           </p>
           <p
             className={`${
               rotation !== "180" && "hidden"
             } rotate-180 md:text-base text-xs font-bold text-white text-center`}
           >
-            3.Podcasts AMAS Twitter Spaces Leveraging existing communities DAO
-            uccess Yield aggregators
+            <ul
+              role="list"
+              class=" flex items-center justify-center flex-wrap gap-2 w-full md:p-8"
+            >
+              <li>Podcasts</li>
+              <li>AMAS</li>
+              <li>Twitter</li>
+              <li>Spaces</li>
+              <li>Leveraging existing communities</li>
+            </ul>
           </p>
           <p
             className={`${
               rotation !== "270" && "hidden"
             } rotate-90 md:text-base text-xs font-bold text-white text-center`}
           >
-            4.Podcasts AMAS Twitter Spaces Leveraging existing communities DAO
-            uccess Yield aggregators
+            <ul
+              role="list"
+              class=" flex items-center justify-center flex-wrap gap-2 w-full md:p-8"
+            >
+              <li>Yield aggregators</li>
+              <li>DEXES</li>
+              <li>Mini Games</li>
+              <li>insurance</li>
+            </ul>
           </p>
         </div>
       </div>
