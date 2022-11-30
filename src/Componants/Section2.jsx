@@ -2,15 +2,15 @@ import React from "react";
 
 function Section2() {
   return (
-    <div className="mt-32 flex flex-col w-full h-fit gap-8 p-4">
-      <span className="mx-auto w-fit text-6xl text-center font-bold bg-gradient-to-r from-[#BFD7EA] to-[#F7996E] bg-clip-text text-transparent">
+    <div className=" mt-32 flex flex-col w-full h-fit gap-8 p-4">
+      <span className="z-50 mx-auto w-fit text-6xl text-center font-bold bg-gradient-to-r from-[#BFD7EA] to-[#F7996E] bg-clip-text text-transparent">
         The SBT
       </span>
-      <div className="flex flex-wrap justify-center gap-2">
-        <div className="w-full hover:scale-105 hover:border-white  transition-all ease-in-out p-4 flex sm:flex-col gap-2 rectangle w-fit rounded-2xl  border-2 border-white/40">
+      <div className=" z-50 flex flex-wrap justify-center gap-2">
+        <div className="  hover:scale-105 hover:border-white  transition-all ease-in-out p-4 flex sm:flex-col gap-2 rectangle w-fit rounded-2xl  border-2 border-white/40">
           <div>
             <p className=" text-xl font-bold text-white ">
-              Revoke-able and Ragequit{" "}
+              Revoke-able and<br/> Ragequit{" "}
             </p>
             <p className="w-48 flex-grow text-sm font-medium text-white ">
               If the majority chooses your token and be burn due to inactivity.

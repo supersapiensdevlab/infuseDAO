@@ -4,7 +4,7 @@ import { useState } from "react";
 function Navbar() {
   const [open, setopen] = useState(false);
   return (
-    <div className="fixed top-0 z-50 w-screen">
+    <div className="fixed top-0 z-[999] w-screen">
       <div className="flex  items-center justify-between px-6  w-full h-16 rectangle  ">
         <span className="text-2xl cursor-pointer font-bold text-white hover:bg-gradient-to-r from-[#e12cfe] to-[#1f37e4] hover:text-transparent hover:bg-clip-text">
           InfuseDAO
@@ -41,15 +41,15 @@ function Navbar() {
           )}
         </div>
         <div className="hidden md:flex  items-center gap-4">
-          <span className="cursor-pointer font-medium text-white hover:bg-gradient-to-r from-[#e12cfe] to-[#1f37e4] hover:text-transparent hover:bg-clip-text">
+          <button className="cursor-pointer font-medium text-white hover:bg-gradient-to-r from-[#e12cfe] to-[#1f37e4] hover:text-transparent hover:bg-clip-text">
             Litepaper
-          </span>
-          <span className="cursor-pointer font-medium text-white hover:bg-gradient-to-r from-[#e12cfe] to-[#1f37e4] hover:text-transparent hover:bg-clip-text">
+          </button>
+          <button className="cursor-pointer font-medium text-white hover:bg-gradient-to-r from-[#e12cfe] to-[#1f37e4] hover:text-transparent hover:bg-clip-text">
             Roadmap
-          </span>
-          <span className="cursor-pointer font-medium text-white hover:bg-gradient-to-r from-[#e12cfe] to-[#1f37e4] hover:text-transparent hover:bg-clip-text">
+          </button>
+          <button className="cursor-pointer font-medium text-white hover:bg-gradient-to-r from-[#e12cfe] to-[#1f37e4] hover:text-transparent hover:bg-clip-text">
             About us
-          </span>
+          </button>
         </div>
       </div>
       <div
@@ -58,15 +58,15 @@ function Navbar() {
         } md:hidden  w-full rectangle transition-all ease-in-out origin-top`}
       >
         <div className="flex flex-col items-center gap-4 p-4">
-          <span className="cursor-pointer font-medium text-white hover:bg-gradient-to-r from-[#e12cfe] to-[#1f37e4] hover:text-transparent hover:bg-clip-text">
+        <button className=" font-medium text-white hover:bg-gradient-to-r from-[#e12cfe] to-[#1f37e4] hover:text-transparent hover:bg-clip-text">
             Litepaper
-          </span>
-          <span className="cursor-pointer font-medium text-white hover:bg-gradient-to-r from-[#e12cfe] to-[#1f37e4] hover:text-transparent hover:bg-clip-text">
+          </button>
+          <button className=" font-medium text-white hover:bg-gradient-to-r from-[#e12cfe] to-[#1f37e4] hover:text-transparent hover:bg-clip-text">
             Roadmap
-          </span>
-          <span className="cursor-pointer font-medium text-white hover:bg-gradient-to-r from-[#e12cfe] to-[#1f37e4] hover:text-transparent hover:bg-clip-text">
+          </button>
+          <button className=" font-medium text-white hover:bg-gradient-to-r from-[#e12cfe] to-[#1f37e4] hover:text-transparent hover:bg-clip-text">
             About us
-          </span>
+          </button>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import quarter from "../Assets/quarter.svg";
 function Section3() {
   const [rotation, setrotation] = useState("0");
   return (
-    <div className=" mt-32 flex flex-col w-full h-fit gap-8 md:p-4">
+    <div className="z-50 mt-32 flex flex-col w-full h-fit gap-8 md:p-4">
       <span className="mx-auto w-fit text-6xl text-center font-bold bg-gradient-to-r from-[#BFD7EA] to-[#F7996E] bg-clip-text text-transparent">
         The Circle
       </span>

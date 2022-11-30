@@ -19,13 +19,13 @@ function Section4() {
     },
   ];
   return (
-    <div className="mt-32 flex flex-col w-full h-fit gap-8 p-4">
+    <div className=" mt-32 flex flex-col w-full h-fit gap-8 p-4">
       <span className="mx-auto w-fit text-6xl text-center font-bold bg-gradient-to-r from-[#BFD7EA] to-[#F7996E] bg-clip-text text-transparent">
         The Team
       </span>
       <div className="flex flex-wrap justify-center gap-8">
         {members.map((m) => (
-          <div className="hover:scale-105 hover:border-white  transition-all ease-in-out p-4 flex flex-col gap-2 rectangle w-fit rounded-2xl  border-2 border-white/40">
+          <div className="z-50 hover:scale-105 hover:border-white  transition-all ease-in-out p-4 flex flex-col gap-2 rectangle w-fit rounded-2xl  border-2 border-white/40">
             <img
               className="w-48 aspect-square object-cover rounded-lg"
               src={m.image}

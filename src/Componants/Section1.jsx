@@ -8,7 +8,7 @@ function Section1() {
       </span>
       <div className="flex flex-wrap justify-center gap-8">
         {[1, 2, 3, 4].map(() => (
-          <div className="hover:scale-105 hover:border-white  transition-all ease-in-out p-8 space-y-2 rectangle w-fit rounded-2xl  border-2 border-white/40 ">
+          <div className="z-50 hover:scale-105 hover:border-white  transition-all ease-in-out p-8 space-y-2 rectangle w-fit rounded-2xl  border-2 border-white/40 ">
             <img src={spaceship} alt="spaceship" />
             <p className=" text-xl font-bold text-white ">
               SBT for Each Member
