@@ -21,9 +21,12 @@ import smallCylinder from "./Assets/Objects/small-cylinder.png";
 import stadiumCapsuleShape from "./Assets/Objects/stadium-capsule-shape.png";
 import torus from "./Assets/Objects/torus.png";
 
+import Parallax from 'parallax-js'
+
 import { useEffect, useState } from "react";
 
 export default function App() {
+
   const Objects = [
     ballSplit1,
     ballSplit2,
@@ -40,11 +43,16 @@ export default function App() {
     stadiumCapsuleShape,
     torus,
   ];
+// useEffect(() => {
+  
+//   var scene = document.getElementById('scene');
+// var parallaxInstance = new Parallax(scene);
+// }, [])
 
   return (
     <div
       id="parent"
-      className="bg-[url('./Assets/bg.svg')] w-screen h-fit relative bg-cover"
+      className="bg-[url('./Assets/bg.svg')] w-screen h-fit relative bg-cover overflow-hidden"
     >
       
       <Navbar />
@@ -54,6 +62,10 @@ export default function App() {
       <Section3 />
       <Section4 />
       <Footer />
+      {/* <div id="scene">
+  <div data-depth="0.2">My first Layer!</div>
+  <div data-depth="0.6">My second Layer!</div>
+</div> */}
       <img
         className={`absolute  top-[222px] left-[-64px] object-cover overflow-visible z-0 blur-sm`}
         src={Objects[Math.floor(Math.random() * 13) + 1]}
